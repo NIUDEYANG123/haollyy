@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="15dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:rightText="查看限额"
+        app:rightTextColor="#FF4A4A4A"
+        app:rightTextSize="14sp"
+        app:title="我的银行卡"
+        app:titleTextColor="#FF4A4A4A"
+        app:titleTextSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/split_line"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/bg_recharge_bank">
+
+            <ImageView
+                android:id="@+id/iv_bank_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/icon_bank_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国工商银行"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv_bank_logo"
+                app:layout_constraintTop_toTopOf="@+id/iv_bank_logo" />
+
+            <TextView
+                android:id="@+id/tv_bank_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="储蓄卡"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv_bank_logo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="6220 **** **** **** 999"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@+id/iv_bank_logo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bank_type" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="单笔限额:1w  单日限额:5w"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="更换银行卡"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="37dp"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:background="#FE9133"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

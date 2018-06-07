@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="15dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:title="修改银行预留手机号"
+        app:titleTextColor="#FF4A4A4A"
+        app:titleTextSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/split_line"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/ed_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入新手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="#222222"
+                android:paddingRight="25dp"
+                android:textColorHint="#DDDDDD"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_EEEEEE"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/ed_message_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入短息验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="#222222"
+                android:textColorHint="#DDDDDD"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/line_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_message_code"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textColor="#FF2B6FF9"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/shape_blue_radius5"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

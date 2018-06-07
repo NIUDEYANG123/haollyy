@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="登录"
+        app:titleTextColor="#4A4A4A"
+        app:titleTextSize="16sp"
+        app:top_background="#FFFFFF" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/split_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="496dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="输入登录密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="#222222"
+                android:textColorHint="#DDDDDD"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_eye_on" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_change"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C3C3C3" />
+
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="right|center_vertical"
+            android:text="忘记密码"
+            android:textColor="#FFFE7537"
+
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/button_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="91dp"
+            android:enabled="false"
+            android:text="登录"
+            android:textSize="17sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

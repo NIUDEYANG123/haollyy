@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/shape_white_radius12"
+    android:orientation="vertical"
+    android:layout_height="114dp">
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="敬请期待"
+        android:textColor="#FF030303"
+        android:textSize="17sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ebebeb"
+        />
+    <TextView
+        android:id="@+id/tv_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="我知道了"
+        android:textColor="#FFFE7737"
+        android:textSize="17sp"
+        />
+</LinearLayout>

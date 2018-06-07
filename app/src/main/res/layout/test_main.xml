@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haolyy.haolyy.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    <com.haolyy.haolyy.custom.BubbleSeekBar
+        android:id="@+id/seekbar_money"
+        android:layout_width="match_parent"
+        android:thumb="@null"
+        android:layout_height="wrap_content"
+        android:max="55" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_measure"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="ddd\nddd\ndd\mmm\n\lllddd\nddd\ndd\mmm\n\lll"
+        android:textSize="48dp"
+        />
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/lv_test"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       />
+</LinearLayout>

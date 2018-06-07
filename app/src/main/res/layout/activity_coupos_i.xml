@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:title="使用优惠券"
+        app:titleTextColor="#FF4A4A4A"
+        app:titleTextSize="16sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:id="@+id/recycle_asset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="没有可用的优惠券～"
+            android:gravity="center"
+            android:textColor="#FF9B9B9B"
+            android:textSize="16sp"
+            />
+        <LinearLayout
+            android:id="@+id/layout_no_network"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_no_network"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/shape_gray"
+                android:padding="6dp"
+                android:text="重新加载"
+                android:textSize="16sp"
+                android:textColor="@color/text_9b9b9b"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

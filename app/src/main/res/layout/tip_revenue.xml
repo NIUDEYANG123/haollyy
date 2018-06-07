@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:background="@drawable/bg_warn"
+        android:layout_width="142dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="分别代表基础收益和\n平台奖励收益"
+        android:textColor="#FFA7A7A7"
+        android:textSize="13sp"
+        />
+</android.support.constraint.ConstraintLayout>

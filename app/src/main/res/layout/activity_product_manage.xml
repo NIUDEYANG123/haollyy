@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_back_orange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/bg_FE7537"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:drawablePadding="8dp"
+            android:text="持有资产(元)"
+            android:textColor="@color/white60"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--.--"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/tv_profit_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="累计收益 --.-- 元"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#26ffffff" />
+
+    <!-- <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/tab_asset"
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:background="@color/bg_FE7537"
+         app:tabIndicatorColor="@color/white"
+         app:tabIndicatorHeight="2dp"
+         app:tabMode="fixed"
+         app:tabSelectedTextColor="@color/white"
+         app:tabTextColor="@color/white" />-->
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tab_asset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_FE7537"
+        app:xTabDisplayNum="3"
+        app:xTabIndicatorColor="@color/white"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabIndicatorWidth="25dp"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="@color/white"
+        app:xTabTextColor="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_asset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

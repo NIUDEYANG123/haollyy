@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_asset_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="NO.*******"
+        android:textColor="@color/text_222222"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_asset_pact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="2018-02-10"
+        android:textColor="@color/text_A6A6A6"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_asset_rate"/>
+
+    <TextView
+        android:id="@+id/tv_asset_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="0000"
+        android:textColor="@color/text_444444"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_asset_rate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_asset_title" />
+
+    <TextView
+        android:id="@+id/tv_asset_rate"
+        android:paddingLeft="40dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="00%"
+        android:textColor="@color/text_444444"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_asset_terms"
+        app:layout_constraintStart_toEndOf="@id/tv_asset_amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_asset_title" />
+
+
+    <TextView
+        android:id="@+id/tv_asset_terms"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:text="00/00"
+        android:textColor="@color/text_444444"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_asset_rate"
+        app:layout_constraintTop_toBottomOf="@+id/tv_asset_title" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="出借金额(元)"
+        android:textColor="@color/text_8D8D8D"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/tv2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_asset_amount" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="约定借款年化利率"
+        android:textColor="@color/text_8D8D8D"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/tv3"
+        app:layout_constraintStart_toEndOf="@id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_asset_amount" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:text="期"
+        android:textColor="@color/text_8D8D8D"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_asset_amount" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/bg_f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

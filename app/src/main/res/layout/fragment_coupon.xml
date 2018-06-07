@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ExpandableListView
+        android:id="@+id/expandable_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/split_line"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:listSelector="@color/split_line"
+        android:scrollbars="none" />
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_no_data" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有可以使用的优惠券" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.haolyy.haolyy.custom.TopBar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:title="提现使用卡券"
+        app:titleTextColor="#FF222222"
+        app:titleTextSize="18sp" />
+    <ExpandableListView
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        android:id="@+id/expandable_invest"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/split_line"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:listSelector="@color/split_line"
+        android:scrollbars="none" />
+    <include android:id="@+id/empty_v" android:visibility="gone" layout="@layout/empty_view"/>
+</android.support.constraint.ConstraintLayout>

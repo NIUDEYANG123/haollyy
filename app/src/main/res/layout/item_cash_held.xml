@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_borrow_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="**********"
+            android:textColor="#FF666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv_borrow_amount"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="--元"
+            android:textColor="#FF666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv_level"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="#FF666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="查看"
+            android:textColor="#FE7537"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"
+        />
+</android.support.constraint.ConstraintLayout>

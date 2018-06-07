@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convenientbanner/convenientbanner.iml" filepath="$PROJECT_DIR$/convenientbanner/convenientbanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easyRefreshLayout/easyRefreshLayout.iml" filepath="$PROJECT_DIR$/easyRefreshLayout/easyRefreshLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/haolly_2018.iml" filepath="$PROJECT_DIR$/haolly_2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/haolly_2019.iml" filepath="$PROJECT_DIR$/haolly_2019.iml" />
+      <module fileurl="file://$PROJECT_DIR$/push/push.iml" filepath="$PROJECT_DIR$/push/push.iml" />
+    </modules>
+  </component>
+</project>

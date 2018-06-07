@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/v_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_long"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:gravity="center"
+            android:text="确认开启自动投标授权？"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="44dp"
+            android:lineSpacingExtra="4dp"
+            android:text="自动投标授权是为了方便出借人一键投标多个小额项目，将资金小额分散出借给多个借款人。确认开启后方可进行出借。"
+            android:textColor="#222222"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_h5"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/dot_red"
+            android:drawablePadding="8dp"
+            android:lineSpacingExtra="6dp"
+            android:text="点击开启按钮,即代表您同意《自动投标授委托书》"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="228dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_orange_radius5"
+            android:gravity="center"
+            android:text="开启"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

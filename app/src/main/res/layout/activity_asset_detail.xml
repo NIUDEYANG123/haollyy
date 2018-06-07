@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/public_title_back_orange" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加入金额(元）"
+                    android:textColor="@color/text_9b9b9b"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_detail_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="7dp"
+                    android:paddingLeft="7dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:textColor="#FF7829"
+                    android:textSize="10sp"
+                    android:background="@drawable/orange_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_detail_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="----"
+                    android:textColor="@color/text_4a4a4a"
+                    android:textSize="36sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="@color/bg_f5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_forward_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目标收益"
+                    android:textColor="@color/text_9b9b9b"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_forward_revenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:text=""
+                    android:textColor="@color/text_4a4a4a"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_have_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:text="已获收益"
+                    android:textColor="@color/text_9b9b9b"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/tv_have_revenue" />
+
+                <TextView
+                    android:id="@+id/tv_have_revenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_4a4a4a"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_f5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="17dp"
+                android:text="详细信息"
+                android:textColor="@color/text_4a4a4a"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_f5" />
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_join_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:leftColor="@color/text_9b9b9b"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="计划名"
+                app:textRight="-----" />
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_join_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:leftColor="@color/text_9b9b9b"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="加入时间"
+                app:textRight="-----" />
+
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_join_term"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:leftColor="@color/text_9b9b9b"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="期限"
+                app:textRight="---" />
+
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:leftColor="@color/text_9b9b9b"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="到期日"
+                app:textRight="-----" />
+
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_year_profit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:leftColor="@color/text_9b9b9b"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="约定借款年化利率"
+                app:textRight="------" />
+            <LinearLayout
+                android:id="@+id/ll_expend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="平台奖励收益率"
+                    android:textColor="#FF9B9B9B"
+                    android:textSize="14dp"
+                    />
+                 <android.support.v4.widget.Space
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="0dp"
+                     />
+                <TextView
+                    android:id="@+id/tv_rate_platform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--%"
+                    android:textColor="#FF4A4A4A"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_up_arrow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/arrow_right"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_platform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@color/bg_f5"
+                >
+                <com.haolyy.haolyy.custom.MyItem
+                    android:id="@+id/my_coupon_profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:leftColor="@color/text_9b9b9b"
+                    app:rightColor="@color/text_4a4a4a"
+                    app:textLeft="卡券加息"
+                    app:textRight="-----" />
+                <com.haolyy.haolyy.custom.MyItem
+                    android:id="@+id/my_append_profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:leftColor="@color/text_9b9b9b"
+                    app:rightColor="@color/text_4a4a4a"
+                    app:textLeft="平台加息"
+                    app:textRight="-----" />
+            </LinearLayout>
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_return_way"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:isArrow="true"
+                app:leftColor="@color/text_9b9b9b"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="回款计划"
+                app:textRight="    "
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bg_f5" />
+
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_auto_record"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:isArrow="true"
+                app:leftColor="@color/text_4a4a4a"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="智能投标记录"
+                app:textRight="    " />
+
+            <com.haolyy.haolyy.custom.MyItem
+                android:id="@+id/my_proctor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:isArrow="true"
+                app:leftColor="@color/text_4a4a4a"
+                app:rightColor="@color/text_4a4a4a"
+                app:textLeft="出借咨询服务协议"
+                app:textRight="    "
+               />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/bg_f5" />
+            <TextView
+                android:id="@+id/tv_open_continue"
+                android:layout_height="46dp"
+                android:layout_width="match_parent"
+                android:background="@color/bg_FE7537"
+                android:textColor="@color/white"
+                android:text="开启续期"
+                android:gravity="center"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

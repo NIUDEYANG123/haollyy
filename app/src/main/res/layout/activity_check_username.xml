@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="注册登录"
+        app:titleTextColor="#4A4A4A"
+        app:titleTextSize="16sp"
+        app:top_background="#FFFFFF" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line">
+
+        <com.haolyy.haolyy.custom.ClearEditText
+            android:id="@+id/btn_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="14sp"
+            android:hint="请输入手机号码"
+            android:textColor="#222222"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColorHint="#DDDDDD"
+            android:layout_marginTop="48dp"
+            android:background="@null" />
+
+        <View
+            android:id="@+id/line_change"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C3C3C3" />
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/button_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="91dp"
+            android:enabled="false"
+            android:text="下一步"
+            android:textSize="17sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

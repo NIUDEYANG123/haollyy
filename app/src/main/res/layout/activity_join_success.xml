@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="加入结果"
+        app:titleTextColor="#4A4A4A"
+        app:titleTextSize="18sp"
+        app:top_background="#FFFFFF" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1"
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cs_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar">
+
+        <ImageView
+            android:id="@+id/iv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_success"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="赢计划加入成功"
+            android:textColor="#FF51C421"
+            android:textSize="26sp"
+            app:layout_constraintLeft_toRightOf="@id/iv_success" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintLeft_toRightOf="@id/iv_success"
+            app:layout_constraintTop_toBottomOf="@id/tv_green">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请稍后在"
+                android:textColor="#FF000016"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的账户"
+                android:textColor="#FF9933"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中查看结果"
+                android:textColor="#FF000016"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cs_left"
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cs_top">
+
+        <ImageView
+            android:id="@+id/dot1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/dot_gray"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#d8d8d8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dot1" />
+
+        <ImageView
+            android:id="@+id/iv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_agree"
+            app:layout_constraintTop_toBottomOf="@id/v1" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#d8d8d8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_agree" />
+
+        <ImageView
+            android:id="@+id/dot2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/dot_gray"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v2" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cs_top">
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.01.31开始计息"
+            android:textColor="#FF4A4A4A"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text="依据小额分散原则\n筛选优质标的进行分散投标"
+            android:textColor="#FF4A4A4A"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_start_date" />
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="预计2018.04.30到期退出"
+            android:textColor="#FFFF515B"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_rule" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_my"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_join"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cs_left"
+        android:gravity="center"
+        android:text="我的账户"
+        android:textColor="#FFFE7A37"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_join_solid"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cs_left"
+        android:text="继续加入"
+        android:textColor="#FFFEFEFE"
+        android:textSize="16sp"
+        android:gravity="center"
+        />
+</android.support.constraint.ConstraintLayout>

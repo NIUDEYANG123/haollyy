@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:title="注册"
+        app:titleTextColor="#4A4A4A"
+        app:titleTextSize="16sp"
+        app:top_background="#FFFFFF" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F3F3F3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/et_pic_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入图形验证码"
+                android:textColor="#222222"
+                android:textColorHint="#DDDDDD"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_pic_code"
+                android:layout_width="94dp"
+                android:layout_marginLeft="18dp"
+                android:layout_height="30dp"
+                tools:src="@drawable/ic_launcher"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_change"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C3C3C3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/ed_message_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入短息验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="#222222"
+                android:textColorHint="#DDDDDD"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/line_horizontal" />
+
+            <TextView
+                android:id="@+id/tv_message_code"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="#FFFE7537"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_change2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C3C3C3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/ed_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入密码（6-12位，必须包含字母和数字)"
+                android:inputType="textPassword"
+                android:maxLength="12"
+                android:textColor="#222222"
+                android:textColorHint="#DDDDDD"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_eye_on" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_change3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C3C3C3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邀请人"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" （非必填）"
+                android:textColor="#DDDDDD"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_up_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_down" />
+        </LinearLayout>
+
+        <com.haolyy.haolyy.custom.ClearEditText
+            android:id="@+id/et_invitation_code"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="请输入邀请人的手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="#222222"
+            android:paddingRight="8dp"
+            android:textColorHint="#DDDDDD"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/button_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:enabled="false"
+            android:text="注册领818元红包+8%加息券"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:id="@+id/cb_check"
+                style="@style/register_cbx"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:checked="true" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_agreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cb_check"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:text="  已同意并阅读"
+                android:textColor="#DDDDDD"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/haolly_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_agreed"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="4dp"
+                android:text="《平台注册协议》"
+                android:textColor="#FE7537"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

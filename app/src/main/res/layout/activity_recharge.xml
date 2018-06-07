@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.haolyy.haolyy.custom.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        app:drawableLeft="@drawable/icon_back"
+        app:drawableLeftVisibility="true"
+        app:title="充值"
+        app:titleTextColor="#FF4A4A4A"
+        app:rightText="银行列表"
+        app:rightTextColor="@color/text_6386FF"
+        android:paddingRight="10dp"
+        app:rightTextSize="12sp"
+        app:titleTextSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/split_line"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/bg_recharge_bank">
+
+            <ImageView
+                android:id="@+id/iv_bank_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/icon_bank_logo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="中国工商银行"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp"
+                android:layout_marginLeft="6dp"
+                app:layout_constraintLeft_toRightOf="@+id/iv_bank_logo"
+                app:layout_constraintTop_toTopOf="@+id/iv_bank_logo" />
+
+            <TextView
+                android:id="@+id/tv_bank_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="储蓄卡"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@+id/tv_bank_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+            <TextView
+                android:id="@+id/tv_bank_card_no"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="24dp"
+                tools:text="6220 **** **** **** 999"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bank_type" />
+
+            <TextView
+                android:id="@+id/tv_bank_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单笔限额:1w  单日限额:5w"
+                android:textColor="#FFFFFFFF"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:textSize="12sp"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="充值金额"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+            <com.haolyy.haolyy.custom.ClearEditText
+                android:id="@+id/et_recharge_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:background="@null"
+                android:hint="充值金额100元起"
+                android:paddingRight="44dp"
+                android:inputType="numberDecimal"
+                android:textColorHint="#FFD7D7D7"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额"
+                android:textColor="#FF9B9B9B"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/account_residue_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                tools:text="24,678,351.00元"
+                android:textColor="#FFFE3440"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="#FF9B9B9B"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:text="*注：当前限额为汇付限额，若您在银行设置过限额，请以银行卡限额为准或联系银行修改"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_recharge_next"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/bg_gradient_no_corners"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

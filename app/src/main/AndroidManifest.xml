@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haolyy.haolyy">
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name="com.haolyy.haolyy.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo_01"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.haolyy.haolyy.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+        <!-- 阿里热修复 -->
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24836644-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="e65a558b808f481b36cb066d7282b456" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCS+YMBR+/psOmMQ2bcr7NYnITG7Cuc9ZsWHJ11RK5jRXEsgvobAwZirI7/ieFaVOqzx2agnzh0iuhZDGj3hNo327X1PNkJmOegGeT1s3nPnaS4li/bUIfJqjkB+iBUMre5QSV/b2pYlpo0dYP1B5avaf7xDBTKyCYoxFK22zqjJYIw82hPiUweFcrGDSWDX/Co+vLJqBFaEP+Z3KdfyI0l+OfNlfNuxTTfsXUn/w0Q0fizqXtKkO/LfwzmAbj2EKFarw2Ro6sUARz2IR94F3YPZgy8mVGSS30Na0RO2O4rIrxUx2XRM/EUIU/kJM1+31yullMLFYjL/Q9LNoNWbD+BAgMBAAECggEATQeQbZ9yUhxyixzYUFmVuZ9ux4MH6J+gxJoCvG9eppDCm/2Zb4bKVfTyjWOKRHm0+LxNQWmxgQM8e09RxEhQxm3Uk89sQOduni50HYIPGY0Zw9STCHLQeBVLA4pAX2ClgeZu7LdMGVn1QAFHQ6jShOUcxOD8FLuJpFwgrc2AkfhPO+x8bp+0Txm9MtC+L7RmWq8cxNVqWYtsJcQX3YpBn7R8xd5vpGZdD5ZaqVWVfWJXx4M3haFcThUX7h76FL0+yRhgKSFCnrtbp3A8AIaZwQThkujxRibB/3KBzzfch4qLK1DG7AaNKOl6FRO/QGfx0Oqn4osX55B0sV9Fvq72cQKBgQDG5LqSX/t/fanQvk5s30y6+Skj7tkfQhda05Ze3xPJbGr9UADpzlTANZSp13YUu4ev1f3Lf5aI9fhx7VTfkCyVdkyWpsDKTS6/BdYXWV17CnI29WGNxZ6CdPBv/eJZh43HaGp1vxRmqs6zBiOO9+xLObWhH7F/0AoN8zjRyuiawwKBgQC9LJfQ0IxBzHgq8s1aCuEMuzJvN3MKMJ3tghdvg+FXKbF6jo0n5SRkpAFZlQrXk7BiQJiVhZFq3OisauUiO2m6sfpZkh+yiZoXzH012MRWmzAYvRe3C+hk4/26CeCzOyfSoAN7y8jWScqOVFjNFuPoKOl0Mtvkl9YOLeVfhCUwawKBgQCip5Pc+RnYXZBu4fOJHeTGU9XNSRvPcGFhKgCjfZPU+hFVMARPMSomNqtpaodq1SJWLo7ryV/2ihGwOgNbAbE0WhawbZbk2tIL7l3zomXMpfJZ97rcEm1bCv9G1z4xMaZFGaNWv/mTLMT1q2ORHDfmHT/okN68RAq09d/V0jb/uQKBgAPv7aj27jRgYQ/jxcpd95kgPEh8SvSnVmIfFwXHJOV/hKYcWWu/JSbDExQeOf+Kn10sIwDZqtEij+UmxGYV/nlYQvGiTO6WVpKwOtroDA4RZMrfBKNWqBuRczJwCjEwxf9oPSpSb3emSYT01HRQSaYHU/SLKnBziIz6/48hXPTJAoGAXoCeLtyTyaeN/AptaiHLwZIE9DantowFAwAuZeFnR1Eud+egTMJq3OkPz4X10BkdRcOdoou8H8sEbZBETXAzPNppxFQMXnfBiD53tybyeYAzEntBI67YpeHr38+uRdemxWiGtzWkjVUeXd2ZDbG50FHzDDEyDi1iOQzVs/daCAw=" />
+        <!-- 友盟在baseAplication中配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5950d938310c935ca0000c81" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="a7de11990631404cddb40157434134fa" />
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"/>
+        <!-- tencent -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 下面三个微博 -->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--主页-->
+        <activity
+            android:name="com.haolyy.haolyy.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--手势密码设置-->
+        <activity
+            android:name=".guesture.GesturePwdSetActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--手势登录-->
+        <activity
+            android:name=".guesture.GesturePwdLoginActivity"
+            android:screenOrientation="portrait" />
+        <!--检查是否注册-->
+        <activity
+            android:name=".ui.account.CheckUsernameActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--登陆-->
+        <activity
+            android:name=".ui.account.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!--计划标详情-->
+        <activity
+            android:name=".ui.product.ProductPlanDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--散标详情-->
+        <activity
+            android:name=".ui.product.ProductSanDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--确认购买-->
+        <activity
+            android:name=".ui.product.SureJoinActivity"
+            android:screenOrientation="portrait" />
+        <!--加入成功-->
+        <activity
+            android:name=".ui.product.JoinSucessActivity"
+            android:screenOrientation="portrait" />
+        <!--投资卡券-->
+        <activity
+            android:name=".ui.record.InvestCouponActivity"
+            android:screenOrientation="portrait" />
+        <!--注册-->
+        <activity
+            android:name=".ui.account.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--持有的资产-->
+        <activity
+            android:name=".ui.my.ProductManageActivity"
+            android:screenOrientation="portrait" />
+        <!--资产详情-->
+        <activity
+            android:name=".ui.my.AssetDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--个人中心-->
+        <activity
+            android:name=".ui.my.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!--手机认证-->
+        <activity
+            android:name=".ui.my.PhoneAuthActivity"
+            android:screenOrientation="portrait" />
+        <!--开户-->
+        <activity
+            android:name=".ui.third.OpenBankActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--开户成功-->
+        <activity
+            android:name=".ui.third.OpenBankSuccess"
+            android:screenOrientation="portrait" />
+        <!--充值成功-->
+        <activity
+            android:name=".ui.third.RechargeSuccess"
+            android:screenOrientation="portrait" />
+        <!--开户失败-->
+        <activity
+            android:name=".ui.third.OpenBankError"
+            android:screenOrientation="portrait" />
+        <!--提现成功-->
+        <activity
+            android:name=".ui.third.WithdrawSuccess"
+            android:screenOrientation="portrait" />
+        <!--提现失败-->
+        <activity
+            android:name=".ui.third.WithdrawError"
+            android:screenOrientation="portrait" />
+        <!--充值-->
+        <activity
+            android:name=".ui.third.RechargeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--提现-->
+        <activity
+            android:name=".ui.third.WithdrawActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--注册成功-->
+        <activity
+            android:name=".ui.account.RegisterSuccessActivity"
+            android:screenOrientation="portrait" />
+        <!--我的卡券-->
+        <activity
+            android:name=".ui.record.MyCouponActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--充值下一步-->
+        <activity
+            android:name=".ui.third.RechargeNextActivity"
+            android:screenOrientation="portrait" />
+        <!--银行卡列表-->
+        <activity
+            android:name=".ui.third.BankListActivity"
+            android:screenOrientation="portrait" />
+        <!--换绑卡-->
+        <activity
+            android:name=".ui.third.ResetBankActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--换绑卡下一步-->
+        <activity
+            android:name=".ui.third.ResetBankNextActivity"
+            android:screenOrientation="portrait" />
+        <!--消息详情-->
+        <activity
+            android:name=".ui.home.MessageDetail"
+            android:screenOrientation="portrait" />
+        <!--消息通知-->
+        <activity
+            android:name=".ui.home.MessageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--赢计划更多-->
+        <activity
+            android:name=".ui.product.ProductWinMoreActivity"
+            android:screenOrientation="portrait" />
+        <!--主页-->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--换绑卡最后一步-->
+        <activity android:name=".ui.third.ResetBankLastActivity" android:screenOrientation="portrait"/>
+        <!--公告-->
+        <activity android:name=".ui.home.NoticeActivity" android:screenOrientation="portrait"/>
+        <!--交易明细-->
+        <activity android:name=".ui.my.TransactionRecordActivity" android:screenOrientation="portrait"/>
+        <!--共用web-->
+        <activity android:name=".base.WebActivity" android:screenOrientation="portrait"/>
+        <!--智能投标记录-->
+        <activity android:name=".ui.my.CashHeldActivity" android:screenOrientation="portrait"/>
+        <!--个人中心持有赢计划的回款计划-->
+        <activity android:name=".ui.my.AssetRepayPlanActivity" android:screenOrientation="portrait"/>
+        <!--密码管理-->
+        <activity android:name=".ui.my.PassManageActivity" android:screenOrientation="portrait"/>
+        <!--修改密码-->
+        <activity android:name=".ui.my.ChangePassActivity" android:screenOrientation="portrait"/>
+        <!--公告详情-->
+        <activity android:name=".ui.home.NoticeDetail" android:screenOrientation="portrait"/>
+        <!--提现卡券-->
+        <activity android:name=".ui.record.WithdrawCouponActivity" android:screenOrientation="portrait"/>
+        <!--回款预报-->
+        <activity android:name=".ui.my.ReturnedAdvanceActivity" android:screenOrientation="portrait"/>
+        <!--主页-->
+        <activity android:name=".ui.account.ResetPasswordActivity" android:screenOrientation="portrait"/>
+        <!--交易详情-->
+        <activity android:name=".ui.my.TransactionRecordDetailsActivity" android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.third.WDWebActivity" android:screenOrientation="portrait"/>
+        <!--上海银行-->
+        <activity android:name=".ui.third.ShWebActivity" android:screenOrientation="portrait"/>
+        <!--关于我们-->
+        <activity android:name=".ui.my.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.my.RiskResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.my.RealNameActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.third.RechargeError" android:screenOrientation="portrait"/>
+        <!--修改银行预留手机号-->
+        <activity android:name=".ui.my.ModifyBankPhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.third.MBPWebActivity" android:screenOrientation="portrait"/>
+        <!--中转页-->
+        <activity android:name=".ui.third.GuideSkipActivity" android:screenOrientation="portrait"/>
+        <!--升级服务-->
+        <service android:name=".utils.UpdateService" />
+
+    </application>
+
+</manifest>

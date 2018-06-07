@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FE7537</color>
+    <color name="colorPrimaryDark">#FE7537</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <!--首页字体-->
+    <color name="tv_navigate">#FF929292</color>
+    <color name="tv_navigate_checked">#FFF5A623</color>
+    <color name="bg_FE7537">#fe7537</color>
+    <color name="text_8F8F8F">#8F8F8F</color>
+    <color name="text_333333">#333333</color>
+    <color name="bg_E6E6E6">#e6e6e6</color>
+    <color name="text_ff4100">#ff4100</color>
+    <color name="text_B9B9B9">#b9b9b9</color>
+    <color name="white60">#99ffffff</color>
+    <color name="text_222222">#222222</color>
+    <color name="text_A6A6A6">#a6a6a6</color>
+    <color name="text_444444">#444444</color>
+    <color name="text_8D8D8D">#8d8d8d</color>
+    <color name="bg_f5">#f5f5f5</color>
+    <color name="text_FE9337">#fe9337</color>
+    <color name="split_line">#F3F3F3</color>
+    <color name="text_9b9b9b">#9b9b9b</color>
+    <color name="text_4a4a4a">#4a4a4a</color>
+    <color name="bg_FE9133">#fe9133</color>
+    <color name="text_6386FF">#6386ff</color>
+    <color name="bg_EEEEEE">#eeeeee</color>
+    <!--自定义进度条背景颜色-->
+    <color name="white_alpha">#ebebeb</color>
+    <!--自定义进度条渐变颜色-->
+    <color name="progress_color_1">#FFAE68 </color>
+    <color name="progress_color_2">#FE7637</color>
+    <color name="bg_gray">#F6F7F9</color>
+    <color name="ebebeb">#ebebeb</color>
+    <color name="black">#000000</color>
+</resources>
