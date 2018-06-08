@@ -161,6 +161,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void initIntent(Intent intent) {
+
         // 跳转到view
         if (intent == null || intent.getBooleanExtra("exitLogin", false)) {
             openActivity(new Intent(mContext, CheckUsernameActivity.class));
